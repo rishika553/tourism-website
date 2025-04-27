@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://images.wallpaperscraft.com/image/single/city_night_light_top_view_10922_1920x1080.jpg");
+
+             background-position: center;
+             background-repeat: no-repeat;
+             height: 1000px;;
+             }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #e64d4d;
+            padding: 20px;
+            border-radius: 8px;
+        
+        }
+        h1 {
+            text-align: center;
+            color: #0f0e0e;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #3810eb;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+        
+        .form-group {
+          display: flex; 
+         justify-content: space-between;
+        }
+        .form-group div {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .form-group div:last-child {
+            margin-right: 0;
+        }
+        button {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 105px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer; 
+        }
+        button:hover {
+            background: #0056b3;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <label for="name">Full Name <span style="color: rgb(19, 18, 18);">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <label for="email">Email <span style="color: rgb(10, 9, 9);">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <label for="phone">Phone Number <span style="color: rgb(5, 5, 5);">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <label for="gender">Gender <span style="color: rgb(5, 5, 5);">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="age">Age <span style="color: rgb(8, 8, 8);">*</span></label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            <label for="destination">Travel Destination <span style="color: rgb(17, 16, 16);">*</span></label>
+            <input type="text" id="destination" name="destination" placeholder="Enter your desired destination" required>
+            <label for="travel-date">Preferred Travel Date <span style="color: rgb(15, 14, 14);">*</span></label>
+            <input type="date" id="travel-date" name="travel-date" required>
+            <label for="travelers">Number of Travelers <span style="color: rgb(12, 11, 11);">*</span></label>
+            <input type="number" id="travelers" name="travelers" placeholder="Enter number of travelers" required>
+            <label for="additional-info">Additional Information</label>
+            <textarea id="additional-info" name="additional-info" rows="3" placeholder="Enter any additional information about your trip"></textarea>
+
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+  
+
+</body>
+</html>
